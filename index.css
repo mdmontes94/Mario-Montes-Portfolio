@@ -3,6 +3,22 @@ html {
     background-color: aqua;
 }
 
+nav {
+    width: 100%;
+    display: block;
+}
+
+ul.mainmenu > li {
+    float: left;
+    width: 33.33%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+ul.mainmenu {
+    width: 100%;
+}
+
 h1 {
     text-align: center;
 }

@@ -19,6 +19,12 @@ ul.mainmenu {
     width: 100%;
 }
 
+ul::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 h1 {
     text-align: center;
 }

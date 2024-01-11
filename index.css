@@ -8,15 +8,18 @@ nav {
     display: block;
 }
 
+ul.mainmenu {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+}
+
 ul.mainmenu > li {
     float: left;
     width: 33.33%;
     font-size: 1.5em;
     text-align: center;
-}
-
-ul.mainmenu {
-    width: 100%;
 }
 
 ul::after {

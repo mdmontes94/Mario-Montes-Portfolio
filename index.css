@@ -1,6 +1,8 @@
 html {
+    height: 100%;
+    width: 100%;
     font-family: sans-serif;
-    background-color: aqua;
+    background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 body {
@@ -48,6 +50,26 @@ h2 {
     text-align: center;
 }
 
+img {
+    height: 85%;
+    width: 85%;
+}
+
+#bluey {
+    rotate: 15deg;
+}
+
+#rachel {
+    box-shadow: rgb(255, 105, 180) 10px 10px 150px inset, 
+				rgb(255, 105, 180) -10px -10px 150px inset;
+    border-radius: 50%;            
+}
+
+#mickey {
+    filter: grayscale(100%);
+}
+
+
 @media only screen and (min-width: 600px) {
      
      a.navicon {
@@ -69,4 +91,9 @@ h2 {
          width: 100%;
          display: block;
      }
+
+    div.flex {
+        display: flex;
+        flex-wrap: row wrap;
+    }
 }

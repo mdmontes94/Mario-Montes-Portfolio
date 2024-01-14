@@ -42,12 +42,10 @@ ul::after {
 	display: table;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    color: white;
+    text-shadow: -1px 2px 0px black;
 }
 
 img {
@@ -67,6 +65,39 @@ img {
 
 #mickey {
     filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #bluey {
+        height: 65%;
+        width: 65%;
+        padding-left: 65px;
+    }
+
+    div.elmo {
+        padding-top: 35px;
+    }
+    
+    #elmo {
+        height: 55%;
+        width: 55%;
+        padding-left: 85px;
+    }
+    
+    div.rachel {
+        padding-left: 50px;
+        padding-top: 35px;
+    }
+
+    div.josh {
+        padding-left: 50px;
+    }
+
+    div.mickey {
+        padding-left: 50px;
+        padding-top: 25px;
+    }
 }
 
 
@@ -95,5 +126,9 @@ img {
     div.flex {
         display: flex;
         flex-wrap: row wrap;
+    }
+
+    div.elmo {
+        padding-right: 50px;
     }
 }

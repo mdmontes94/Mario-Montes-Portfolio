@@ -1,10 +1,13 @@
 "use strict";
 
-var query = prompt("Add any integer between 1-5.");
+const values = [7, 77, 8, 88];
 
-const expression = function(query) 
+const expression = function(int) 
 {
-    newQuery = query += 1;
+    int++;
 
-    console.log(newQuery);
-}
+    console.log(int);  
+};
+
+const int = 2;
+expression(int);

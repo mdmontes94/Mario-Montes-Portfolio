@@ -1,13 +1,26 @@
 "use strict";
 
-const values = [7, 77, 8, 88];
+const values = [7, 77, 8, 88, 9, 99, 6];
 
-const expression = function(int) 
+const expression = function(num) 
 {
-    int++;
+    num++;
 
-    console.log(int);  
+    console.log(num);  
 };
 
-const int = 2;
-expression(int);
+function processWithExpression (funct, num)
+{
+    if (num % 2 == 0)
+    {
+        funct(num);
+    }
+    else{
+        console.log("The number is odd.");
+    }
+}
+
+for(let i in values)
+{
+    processWithExpression(expression, values[i]);
+}

@@ -1,6 +1,6 @@
 "use strict";
 
-const values = [7, 77, 8, 88, 9, 99, 6];
+const values = [7, 8, 9, 88, 7, 66, 9];
 
 const expression = function(num) 
 {

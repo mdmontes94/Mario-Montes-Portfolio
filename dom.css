@@ -45,11 +45,22 @@ h1, h2 {
     text-align: center;
 }
 
-div {
+#container {
+    display: block;
     margin: auto;
     width: 80%;
-    border: 5px solid green;
+    outline: 3px solid black;
     text-align: center;
+}
+
+#buttons {
+    margin: auto;
+    margin-top: 25px;
+    width: 20%;
+}
+
+#add {
+    margin-left: 75px;
 }
 
 @media only screen and (min-width: 600px) {

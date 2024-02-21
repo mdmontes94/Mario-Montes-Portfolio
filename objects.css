@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+a.navicon > img {
+    outline: 3px solid navy;
+    background-color: whitesmoke;
+    height: 12.5vw;
+    width: 12.5vw;
+}
+
+a.navicon:hover+nav, nav:hover {
+    display: block;
+}
+
+ul {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+}
+
+ul.mainmenu > li {
+    font-size: 2.5em;
+    text-indent: 1em;
+    background-color: bisque;
+}
+
+ul::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+     
+    a.navicon {
+        display: none;
+    }
+    
+    ul.mainmenu > li {
+        float: left;
+        width: 25%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    ul.mainmenu {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: block;
+    }
+}

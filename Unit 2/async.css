@@ -45,15 +45,6 @@ h1, h2 {
     text-align: center;
 }
 
-.moves {
-    display: block;
-    margin: auto;
-    width: 80%;
-    outline: 3px solid maroon;
-    text-align: center; 
-}
-
-
 @media only screen and (min-width: 600px) {
      
     a.navicon {

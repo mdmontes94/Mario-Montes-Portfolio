@@ -36,4 +36,9 @@ async function createRace()
 createRace().then((results) =>
 {
     console.log("Loser: ", results[2]);
+
+    var newParagraph = document.createElement("p");
+    newParagraph.textContent = "Winner: runner2"
+
+    document.querySelector("#winner").appendChild(newParagraph);
 });

@@ -3,7 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <head>
         <title>Mario Montes Portfolio</title>
-        <script src="vr.js" defer></script>
+        <link href="vr.css" rel="stylesheet" />
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <script src="vr.js"></script>
     </head>
     <body>
         <a class="navicon"><img src="navicon.png"></a>
@@ -15,5 +17,12 @@
                 <li><a href="">TBD</a></li>
             </ul>
         </nav>
+        <a-scene background="color: black" light="defaultLightsEnabled: false">
+            <a-octahedron position="0 3.5 -5" color="hotpink" radius="0.65" emissive="hotpink" emissiveIntensity="500" shadow="cast: true"></a-octahedron>
+            <a-torus position="0 2.25 -5" color="ivory" arc="360" rotation="90 90 0" radius="3" radius-tubular="0.1" shadow="receive: true; cast: true"></a-torus>
+            <a-cone position="0 1.5 -5" color="darkkhaki" radius-bottom="4" radius-top="0.5" height="2" shadow="receive: true; cast: true;"></a-cone>
+            <a-entity id="camera" camera look-controls wasd-controls="acceleration: 50; fly: true" position="0 1.5 0"></a-entity>
+            <a-entity light="type: directional; color: #EEE; intensity: 1.0; castShadow: true" position="-1 0 0"></a-entity> 
+        </a-scene>
     </body>
 </html>

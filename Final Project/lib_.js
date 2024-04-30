@@ -16,9 +16,9 @@ class Kid
             picture.src = "bluey.png"
             document.querySelector(this.cell).appendChild(picture);
             
-            /*var warriorClass = document.createElement("p");
-            warriorClass.textContent = "Barbarian";
-            movesDiv.appendChild(warriorClass);*/
+            var nameplate = document.createElement("p");
+            nameplate.textContent = "Bluey";
+            document.querySelector(this.cell).appendChild(nameplate);
         }
         else if(this.name == "Winton")
         {
@@ -26,39 +26,39 @@ class Kid
             picture.src = "winton.png"
             document.querySelector(this.cell).appendChild(picture);
             
-            /*var warriorClass = document.createElement("p");
-            warriorClass.textContent = "Bard";
-            movesDiv.appendChild(warriorClass);*/
+            var nameplate = document.createElement("p");
+            nameplate.textContent = "Winton";
+            document.querySelector(this.cell).appendChild(nameplate);
         }
         else if(this.name == "Indy")
         {
             var picture = document.createElement("img");
             picture.src = "indy.png"
             document.querySelector(this.cell).appendChild(picture);
-            
-            /*var warriorClass = document.createElement("p");
-            warriorClass.textContent = "Paladin";
-            movesDiv.appendChild(warriorClass);*/
+
+            var nameplate = document.createElement("p");
+            nameplate.textContent = "Indy";
+            document.querySelector(this.cell).appendChild(nameplate);
         }
         else if(this.name == "Bingo")
         {
             var picture = document.createElement("img");
             picture.src = "bingo.png"
             document.querySelector(this.cell).appendChild(picture);
-            
-            /*var warriorClass = document.createElement("p");
-            warriorClass.textContent = "Ranger";
-            movesDiv.appendChild(warriorClass);*/
+
+            var nameplate = document.createElement("p");
+            nameplate.textContent = "Bingo";
+            document.querySelector(this.cell).appendChild(nameplate);
         }
         else if(this.name == "Snickers")
         { 
             var picture = document.createElement("img");
             picture.src = "snickers.png"
             document.querySelector(this.cell).appendChild(picture);
-            
-            /*var warriorClass = document.createElement("p");
-            warriorClass.textContent = "Warlock";
-            movesDiv.appendChild(warriorClass);*/
+
+            var nameplate = document.createElement("p");
+            nameplate.textContent = "Snickers";
+            document.querySelector(this.cell).appendChild(nameplate);
         }       
     }
 }

@@ -71,7 +71,7 @@ const remainingPlayers = () =>
     if(cellsWithPlayers.length == 1)
     {
         var winner = cellsWithPlayers[0].data.textContent.trim();
-        window.alert(winner + " is the winner!");
+        window.alert(winner + " is the winner! Oos!");
 
         cellsWithPlayers[0].data.style.backgroundColor = "green";
     }
